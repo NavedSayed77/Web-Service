@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStartup - Digital Innovation Solutions</title>
+    <!-- Favicon using Font Awesome SVG -->
+    <link rel="icon" type="image/svg+xml" href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="%23007bff" d="M224 32C100.3 32 0 132.3 0 256s100.3 224 224 224 224-100.3 224-224S347.7 32 224 32zm0 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm0 352c-70.7 0-128-57.3-128-128 0-35.3 28.7-64 64-64s64 28.7 64 64c0 17.7-14.3 32-32 32s-32-14.3-32-32c0-8.8 7.2-16 16-16s16 7.2 16 16c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-26.5 21.5-48 48-48s48 21.5 48 48c0 35.3-28.7 64-64 64z"/></svg>'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <svg width="35" height="35" viewBox="0 0 50 50" class="d-inline-block align-text-top me-2">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#007bff;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#0056b3;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect width="50" height="50" rx="10" fill="url(#logoGradient)" />
+                    <circle cx="25" cy="20" r="8" fill="white" opacity="0.9" />
+                    <rect x="15" y="30" width="20" height="3" rx="1.5" fill="white" opacity="0.9" />
+                    <rect x="18" y="36" width="14" height="2" rx="1" fill="white" opacity="0.7" />
+                    <rect x="20" y="41" width="10" height="2" rx="1" fill="white" opacity="0.5" />
+                </svg>
+                TechStartup
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <section id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-particles"></div>
+        <div class="container">
+            <div class="row min-vh-100 align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-2 fw-bold text-white mb-4 typewriter-text" data-aos="slide-right" data-aos-duration="1200" data-aos-delay="200">
+                        Digital Innovation Starts Here
+                    </h1>
+                    <p class="lead text-white mb-4" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="800">
+                        Transforming ideas into powerful digital solutions that drive business growth and success
+                    </p>
+                    <div data-aos="bounce" data-aos-duration="1000" data-aos-delay="1200">
+                        <a href="#about" class="btn btn-primary btn-lg me-3 pulse-btn">Learn More</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg glow-btn">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Us Section Start -->
+    <section id="about" class="py-5 bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="about-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Team Collaboration" class="img-fluid rounded-4 shadow-primary w-100 hover-lift" loading="lazy">
+                        <div class="about-overlay"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+                    <h2 class="mb-3 text-primary" data-aos="slide-up" data-aos-duration="800" data-aos-delay="600">About Us</h2>
+                    <p class="lead" data-aos="fade-in" data-aos-duration="800" data-aos-delay="800">Our mission is to empower businesses and individuals through innovative technology solutions. We believe in the power of collaboration, creativity, and integrity to drive progress and deliver exceptional value to our clients. Our vision is to be a global leader in digital transformation, inspiring positive change and growth in every project we undertake.</p>
+                    <div class="row mt-4">
+                        <div class="col-6" data-aos="flip-left" data-aos-duration="800" data-aos-delay="1000">
+                            <div class="stat-box text-center p-3">
+                                <h3 class="text-primary fw-bold counter" data-target="150">0</h3>
+                                <p class="small text-muted">Projects Completed</p>
+                            </div>
+                        </div>
+                        <div class="col-6" data-aos="flip-right" data-aos-duration="800" data-aos-delay="1200">
+                            <div class="stat-box text-center p-3">
+                                <h3 class="text-primary fw-bold counter" data-target="98">0</h3>
+                                <p class="small text-muted">Client Satisfaction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Us Section End -->
+
+    <!-- Services Section Start -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5 section-title" data-aos="fade-up">
+                    <h2 class="fw-bold text-primary">Our Services</h2>
+                    <p class="text-muted lead">We provide comprehensive digital solutions to help your business thrive</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 shadow-sm service-card">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <i class="fas fa-code fa-3x text-primary"></i>
+                            </div>
+                            <h4 class="card-title mb-3">Website Development</h4>
+                            <p class="card-text">Create stunning, responsive websites that engage your audience and drive business growth. From concept to launch, we deliver modern web solutions tailored to your needs.</p>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="fas fa-check text-primary me-2"></i>Responsive Design</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>SEO Optimization</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Fast Loading Speed</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>CMS Integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 shadow-sm service-card">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <i class="fas fa-mobile-alt fa-3x text-primary"></i>
+                            </div>
+                            <h4 class="card-title mb-3">App Development</h4>
+                            <p class="card-text">Build powerful mobile applications for iOS and Android platforms. Our expert team creates user-friendly apps that provide seamless experiences across all devices.</p>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="fas fa-check text-primary me-2"></i>Cross-Platform Development</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Native Performance</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>App Store Optimization</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Push Notifications</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 shadow-sm service-card">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <i class="fas fa-gamepad fa-3x text-primary"></i>
+                            </div>
+                            <h4 class="card-title mb-3">Game Development</h4>
+                            <p class="card-text">Develop engaging and immersive games for multiple platforms. From casual mobile games to complex PC experiences, we bring your gaming vision to life.</p>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="fas fa-check text-primary me-2"></i>3D Graphics & Animation</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Multi-Platform Support</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Real-time Multiplayer</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>In-Game Monetization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Portfolio Section Start -->
+    <section id="portfolio" class="py-5 bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5 section-title" data-aos="fade-up">
+                    <h2 class="fw-bold text-primary">Our Portfolio</h2>
+                    <p class="text-muted lead">Explore our latest projects and creative solutions</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+                    <div class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolio1">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="E-Commerce Website" class="img-fluid portfolio-img" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <i class="fas fa-search-plus fa-2x text-white mb-3"></i>
+                                    <h5 class="text-white mb-2">E-Commerce Platform</h5>
+                                    <p class="text-white">Click to view details</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info p-3">
+                            <h5 class="mb-1">E-Commerce Platform</h5>
+                            <p class="text-muted small mb-0">Modern shopping experience with advanced features</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+                    <div class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolio2">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mobile App" class="img-fluid portfolio-img">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <i class="fas fa-search-plus fa-2x text-white mb-3"></i>
+                                    <h5 class="text-white mb-2">Fitness Tracking App</h5>
+                                    <p class="text-white">Click to view details</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info p-3">
+                            <h5 class="mb-1">Fitness Tracking App</h5>
+                            <p class="text-muted small mb-0">Comprehensive health and workout tracking solution</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+                    <div class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolio3">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1551103782-8ab07afd45c1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Adventure Game" class="img-fluid portfolio-img">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <i class="fas fa-search-plus fa-2x text-white mb-3"></i>
+                                    <h5 class="text-white mb-2">Adventure Quest Game</h5>
+                                    <p class="text-white">Click to view details</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info p-3">
+                            <h5 class="mb-1">Adventure Quest Game</h5>
+                            <p class="text-muted small mb-0">Epic gaming experience with immersive storytelling</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Corporate Website" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h5 class="text-white mb-2">Corporate Website</h5>
+                                    <p class="text-white">Professional corporate website with CMS integration and multi-language support for global reach.</p>
+                                    <a href="#" class="btn btn-primary">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info p-3">
+                            <h5 class="mb-1">Corporate Website</h5>
+                            <p class="text-muted small mb-0">Professional business presence with global capabilities</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Learning App" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h5 class="text-white mb-2">Educational Learning App</h5>
+                                    <p class="text-white">Interactive learning platform with gamification elements and progress tracking for students.</p>
+                                    <a href="#" class="btn btn-primary">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info p-3">
+                            <h5 class="mb-1">Educational Learning App</h5>
+                            <p class="text-muted small mb-0">Interactive education with gamification features</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Restaurant Website" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h5 class="text-white mb-2">Restaurant Website</h5>
+                                    <p class="text-white">Beautiful restaurant website with online ordering system and reservation management features.</p>
+                                    <a href="#" class="btn btn-primary">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info p-3">
+                            <h5 class="mb-1">Restaurant Website</h5>
+                            <p class="text-muted small mb-0">Complete dining experience with online ordering</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section End -->
+
+    <!-- Testimonials Section Start -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="fw-bold text-primary">What Our Clients Say</h2>
+                    <p class="text-muted">Don't just take our word for it - hear from our satisfied clients</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="flip-left" data-aos-delay="100" data-aos-duration="1000">
+                    <div class="card h-100 testimonial-card border-0 shadow-sm hover-lift">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3 testimonial-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="John Smith" class="rounded-circle testimonial-photo pulse-img">
+                            </div>
+                            <div class="mb-3">
+                                <i class="fas fa-quote-left text-primary fa-2x quote-icon"></i>
+                            </div>
+                            <p class="card-text mb-4">"Working with this team was an absolute pleasure. They delivered our e-commerce platform on time and exceeded all our expectations. The attention to detail and professional approach was outstanding."</p>
+                            <h5 class="card-title mb-1">John Smith</h5>
+                            <p class="text-muted small mb-2">CEO, TechCorp Solutions</p>
+                            <div class="star-rating mb-2">
+                                <i class="fas fa-star text-warning star-animate" style="animation-delay: 0.1s"></i>
+                                <i class="fas fa-star text-warning star-animate" style="animation-delay: 0.2s"></i>
+                                <i class="fas fa-star text-warning star-animate" style="animation-delay: 0.3s"></i>
+                                <i class="fas fa-star text-warning star-animate" style="animation-delay: 0.4s"></i>
+                                <i class="fas fa-star text-warning star-animate" style="animation-delay: 0.5s"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="flip-up" data-aos-delay="300" data-aos-duration="1000">
+                    <div class="card h-100 testimonial-card border-0 shadow-sm hover-lift">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3 testimonial-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Sarah Johnson" class="rounded-circle testimonial-photo pulse-img">
+                            </div>
+                            <div class="mb-3">
+                                <i class="fas fa-quote-left text-primary fa-2x quote-icon"></i>
+                            </div>
+                            <p class="card-text mb-4">"The mobile app they developed for our fitness business has been a game-changer. User engagement increased by 300% and our clients love the intuitive design. Highly recommended!"</p>
+                            <h5 class="card-title mb-1">Sarah Johnson</h5>
+                            <p class="text-muted small mb-2">Founder, FitLife Studio</p>
+                            <div class="star-rating mb-2">
+                                <i class="fas fa-star text-warning star-animate" style="animation-delay: 0.1s"></i>
+                                <i class="fas fa-star text-warning star-animate" style="animation-delay: 0.2s"></i>
+                                <i class="fas fa-star text-warning star-animate" style="animation-delay: 0.3s"></i>
+                                <i class="fas fa-star text-warning star-animate" style="animation-delay: 0.4s"></i>
+                                <i class="fas fa-star text-warning star-animate" style="animation-delay: 0.5s"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="flip-right" data-aos-delay="500" data-aos-duration="1000">
+                    <div class="card h-100 testimonial-card border-0 shadow-sm hover-lift">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3 testimonial-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Michael Davis" class="rounded-circle testimonial-photo pulse-img">
+                            </div>
+                            <div class="mb-3">
+                                <i class="fas fa-quote-left text-primary fa-2x quote-icon"></i>
+                            </div>
+                            <p class="card-text mb-4">"From concept to launch, they guided us through every step of our game development project. The final product was polished, engaging, and performed flawlessly across all platforms."</p>
+                            <h5 class="card-title mb-1">Michael Davis</h5>
+                            <p class="text-muted small mb-2">Creative Director, GameStudio Inc</p>
+                            <div class="star-rating mb-2">
+                                <i class="fas fa-star text-warning star-animate" style="animation-delay: 0.1s"></i>
+                                <i class="fas fa-star text-warning star-animate" style="animation-delay: 0.2s"></i>
+                                <i class="fas fa-star text-warning star-animate" style="animation-delay: 0.3s"></i>
+                                <i class="fas fa-star text-warning star-animate" style="animation-delay: 0.4s"></i>
+                                <i class="fas fa-star text-warning star-animate" style="animation-delay: 0.5s"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Section End -->
+
+    <!-- Blog Section Start -->
+    <section id="blog" class="py-5 bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="fw-bold text-primary">Latest News & Articles</h2>
+                    <p class="text-muted">Stay updated with the latest trends in technology and development</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="slide-right" data-aos-delay="100" data-aos-duration="1000">
+                    <div class="card h-100 blog-card border-0 shadow-sm hover-lift">
+                        <div class="blog-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top blog-img" alt="Web Development Trends" loading="lazy">
+                            <div class="blog-overlay">
+                                <i class="fas fa-external-link-alt fa-2x text-white"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-gradient bg-primary mb-2">Published: August 5, 2025</span>
+                            <h5 class="card-title">Top Web Development Trends for 2025</h5>
+                            <p class="card-text text-muted">Discover the latest technologies and frameworks that are shaping the future of web development. From AI integration to progressive web apps...</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="fas fa-clock me-1"></i>5 min read</small>
+                                <a href="#" class="btn btn-primary btn-sm pulse-btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="slide-left" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="card h-100 blog-card border-0 shadow-sm hover-lift">
+                        <div class="blog-image-wrapper position-relative">
+                            <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top blog-img" alt="Mobile App Design" loading="lazy">
+                            <div class="blog-overlay">
+                                <i class="fas fa-external-link-alt fa-2x text-white"></i>
+                            </div>
+                            <div class="blog-logo-hover" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) scale(0.7);opacity:0;pointer-events:none;transition:all 0.4s cubic-bezier(0.4,0,0.2,1);z-index:3;">
+                                <svg width="48" height="48" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer-logo">
+                                    <defs>
+                                        <linearGradient id="blogLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#007bff"/>
+                                            <stop offset="100%" stop-color="#0056b3"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <rect width="50" height="50" rx="10" fill="url(#blogLogoGradient)"/>
+                                    <circle cx="25" cy="20" r="8" fill="white" opacity="0.9"/>
+                                    <rect x="15" y="30" width="20" height="3" rx="1.5" fill="white" opacity="0.9"/>
+                                    <rect x="18" y="36" width="14" height="2" rx="1" fill="white" opacity="0.7"/>
+                                    <rect x="20" y="41" width="10" height="2" rx="1" fill="white" opacity="0.5"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-gradient bg-primary mb-2">Published: August 2, 2025</span>
+                            <h5 class="card-title">The Art of Mobile App User Experience</h5>
+                            <p class="card-text text-muted">Learn the key principles of creating intuitive and engaging mobile app interfaces that users love. Best practices for iOS and Android design...</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="fas fa-clock me-1"></i>7 min read</small>
+                                <a href="#" class="btn btn-primary btn-sm pulse-btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="slide-right" data-aos-delay="300" data-aos-duration="1000">
+                    <div class="card h-100 blog-card border-0 shadow-sm hover-lift">
+                        <div class="blog-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top blog-img" alt="Game Development" loading="lazy">
+                            <div class="blog-overlay">
+                                <i class="fas fa-external-link-alt fa-2x text-white"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-gradient bg-primary mb-2">Published: July 30, 2025</span>
+                            <h5 class="card-title">Building Immersive Gaming Experiences</h5>
+                            <p class="card-text text-muted">Explore the techniques and technologies behind creating captivating games. From 3D graphics to sound design, learn what makes games engaging...</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="fas fa-clock me-1"></i>6 min read</small>
+                                <a href="#" class="btn btn-primary btn-sm pulse-btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="fw-bold text-primary">Contact Us</h2>
+                    <p class="text-muted">Get in touch with us - we'd love to hear from you</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4" data-aos="fade-right">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h4 class="mb-4 text-primary">Send us a Message</h4>
+                            <form id="contactForm" novalidate>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control rounded-pill" id="name" placeholder="Enter your full name" required>
+                                    <div class="invalid-feedback">Please provide a valid name.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control rounded-pill" id="email" placeholder="Enter your email" required>
+                                    <div class="invalid-feedback">Please provide a valid email.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control rounded-3" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                                    <div class="invalid-feedback">Please provide a message.</div>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100 rounded-pill py-3">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4" data-aos="fade-left">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-0">
+                            <h4 class="p-4 mb-0 text-primary">Our Location</h4>
+                            <div class="map-container">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.309167870636!2d-74.00599368459418!3d40.71277597932964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316e7b8c67%3A0x2eadaa7d4e6b3b1d!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1691506895123!5m2!1sen!2sus"
+                                    width="100%"
+                                    height="350"
+                                    style="border:0;"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                            <div class="p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                                    <div>
+                                        <strong>Address:</strong><br>
+                                        123 Business Street, Suite 100<br>
+                                        New York, NY 10001
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-phone text-primary me-3"></i>
+                                    <div>
+                                        <strong>Phone:</strong><br>
+                                        +1 (555) 123-4567
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-envelope text-primary me-3"></i>
+                                    <div>
+                                        <strong>Email:</strong><br>
+                                        contact@techstartup.com
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Start -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-brand">
+                        <a class="navbar-brand text-white fw-bold fs-3 text-decoration-none" href="#">
+                            <span class="footer-logo-wrapper" id="footerLogoClick" style="display:inline-block;vertical-align:middle;margin-right:10px;cursor:pointer;">
+                                <svg width="40" height="40" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer-logo animate__animated animate__fadeIn">
+                                    <defs>
+                                        <linearGradient id="footerLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#007bff"/>
+                                            <stop offset="100%" stop-color="#0056b3"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <rect width="50" height="50" rx="10" fill="url(#footerLogoGradient)"/>
+                                    <circle cx="25" cy="20" r="8" fill="white" opacity="0.9"/>
+                                    <rect x="15" y="30" width="20" height="3" rx="1.5" fill="white" opacity="0.9"/>
+                                    <rect x="18" y="36" width="14" height="2" rx="1" fill="white" opacity="0.7"/>
+                                    <rect x="20" y="41" width="10" height="2" rx="1" fill="white" opacity="0.5"/>
+                                </svg>
+                            </span>
+                            TechStartup
+                        </a>
+                        <p class="mt-3 text-light">Creating innovative digital solutions that empower businesses and drive success. Your trusted partner in technology transformation since 2020.</p>
+                        <p class="text-light">We specialize in website development, mobile app development, and game development, delivering cutting-edge solutions that exceed expectations and drive real business results.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="text-white mb-3">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#hero" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="#about" class="text-light text-decoration-none">About</a></li>
+                        <li><a href="#services" class="text-light text-decoration-none">Services</a></li>
+                        <li><a href="#portfolio" class="text-light text-decoration-none">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="text-white mb-3">More</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#testimonials" class="text-light text-decoration-none">Testimonials</a></li>
+                        <li><a href="#blog" class="text-light text-decoration-none">Blog</a></li>
+                        <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="text-white mb-3">Follow Us</h5>
+                    <p class="text-light mb-3">Stay connected with us on social media for updates and insights</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-3 social-icon">
+                            <i class="fab fa-facebook-f fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-white me-3 social-icon">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-white me-3 social-icon">
+                            <i class="fab fa-linkedin-in fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-white me-3 social-icon">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-white social-icon">
+                            <i class="fab fa-youtube fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-light">&copy; 2025 TechStartup. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0 text-light">Designed with <i class="fas fa-heart text-danger"></i> by TechStartup Team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Portfolio Modals -->
+    <div class="modal fade" id="portfolio1" tabindex="-1" aria-labelledby="portfolio1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title" id="portfolio1Label">E-Commerce Platform</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="E-Commerce Platform" class="img-fluid rounded mb-3">
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="text-primary mb-3">Project Details</h6>
+                            <p><strong>Technologies:</strong> React, Node.js, MongoDB, Stripe API</p>
+                            <p><strong>Duration:</strong> 3 months</p>
+                            <p><strong>Team Size:</strong> 5 developers</p>
+                            <h6 class="text-primary mt-4 mb-3">Description</h6>
+                            <p>A comprehensive e-commerce platform featuring user authentication, product management, shopping cart functionality, secure payment processing, and order tracking. Built with modern web technologies and optimized for performance.</p>
+                            <h6 class="text-primary mt-4 mb-3">Key Features</h6>
+                            <ul>
+                                <li>Responsive design for all devices</li>
+                                <li>Secure payment integration</li>
+                                <li>Real-time inventory management</li>
+                                <li>Advanced search and filtering</li>
+                                <li>Customer review system</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-secondary">
+                    <a href="#" class="btn btn-primary">View Live Site</a>
+                    <a href="#" class="btn btn-outline-light">View Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="portfolio2" tabindex="-1" aria-labelledby="portfolio2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title" id="portfolio2Label">Fitness Tracking App</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fitness App" class="img-fluid rounded mb-3">
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="text-primary mb-3">Project Details</h6>
+                            <p><strong>Technologies:</strong> React Native, Firebase, Redux</p>
+                            <p><strong>Duration:</strong> 4 months</p>
+                            <p><strong>Team Size:</strong> 4 developers</p>
+                            <h6 class="text-primary mt-4 mb-3">Description</h6>
+                            <p>A comprehensive fitness tracking mobile application that helps users monitor their workouts, nutrition, and health metrics with real-time synchronization across devices.</p>
+                            <h6 class="text-primary mt-4 mb-3">Key Features</h6>
+                            <ul>
+                                <li>Workout planning and tracking</li>
+                                <li>Nutrition monitoring</li>
+                                <li>Progress analytics</li>
+                                <li>Social sharing features</li>
+                                <li>Wearable device integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-secondary">
+                    <a href="#" class="btn btn-primary">Download App</a>
+                    <a href="#" class="btn btn-outline-light">View Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="portfolio3" tabindex="-1" aria-labelledby="portfolio3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title" id="portfolio3Label">Adventure Quest Game</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1551103782-8ab07afd45c1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Adventure Game" class="img-fluid rounded mb-3">
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="text-primary mb-3">Project Details</h6>
+                            <p><strong>Technologies:</strong> Unity 3D, C#, Blender, Photoshop</p>
+                            <p><strong>Duration:</strong> 8 months</p>
+                            <p><strong>Team Size:</strong> 8 developers</p>
+                            <h6 class="text-primary mt-4 mb-3">Description</h6>
+                            <p>An immersive 3D adventure game featuring stunning graphics, engaging storyline, and dynamic gameplay mechanics. Players embark on epic quests with rich character development and strategic combat systems.</p>
+                            <h6 class="text-primary mt-4 mb-3">Key Features</h6>
+                            <ul>
+                                <li>Open-world exploration</li>
+                                <li>Dynamic weather system</li>
+                                <li>Character progression</li>
+                                <li>Multiplayer co-op mode</li>
+                                <li>Immersive sound design</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-secondary">
+                    <a href="#" class="btn btn-primary">Play Demo</a>
+                    <a href="#" class="btn btn-outline-light">View Trailer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-primary back-to-top" style="display: none;">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
